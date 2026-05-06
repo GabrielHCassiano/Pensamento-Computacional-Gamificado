@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Nome do Jogo - Home</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
@@ -30,6 +32,8 @@
 
     <link rel="stylesheet" href="css/utilities.css">
 
+    <link rel="stylesheet" href="css/main.css">
+
 
 </head>
 
@@ -37,10 +41,13 @@
 
   <header>
 
-    <h1>Nome do Jogo</h1>
+    <div class="menu-bar">
+        <h1>Nome do Jogo</h1>
+        <span id="menu-bar">☰</span>
+    </div>
 
-    <nav aria-label="Navegação Principal">
-        <ul>
+    <nav>
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="game.html">Jogo</a></li> 
             <li><a href="areaprofessor.html">Área do Professor</a></li>
@@ -51,36 +58,32 @@
 
   <main>
 
-    <div>
-        <video>
-            <source  src="Jogo.mp4" type="video/mp4">
-            <p>Aqui vai estar um curto vídeo do jogo</p>
-        </video>
-    </div>
-    <section>
-        <h2>Nome do Jogo</h2>
-        <p>Descrição do jogo: colocar aqui depois uma descrição breve do jogo</p>
-        <form action="Game.html">
-            <input type="submit" value="Jogar" />
-        </form>
-        
-    </section>
+        <div>
+            
+        </div>
+        <section>
+            <h2>Nome do Jogo</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, iste! Illo, provident? Ipsam amet magnam, recusandae vero debitis eveniet excepturi minus voluptate id quidem ratione quasi inventore fugit, consequuntur hic.</p>
+            <a role="button" aria-label="Jogar" href="Game.html">Jogar</a>
+            
+        </section>
 
-    <section>
-        <h2>Área Professor</h2>
-        <p>Descrição sobre a área do professor</p>
+        <section>
+            <h2>Área Professor</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit architecto neque rerum quod veritatis minima voluptatum expedita ipsam vero fugiat, inventore, eum eaque sapiente dignissimos fuga molestiae, ex alias incidunt! </p>
+            <form action="areaprofessor.html">
+                <input type="submit" value="Saiba mais" />
+            </form>
 
-        <form action="areaprofessor.html">
-            <input type="submit" value="Saiba mais" />
-        </form>
-
-    </section>
+        </section>
+    </main>
+</body>
 
   <footer>
 
         <p>&copy; 2026 - Matheus Maia, Gabriel Henriques</p>
   </footer>
 
-</body>
+
 
 </html>

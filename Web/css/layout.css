@@ -1,0 +1,55 @@
+/* LAYOUT BASE — Mobile (<480px): coluna única */
+
+    .menu-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: var(--space-sm);
+        padding: var(--space-sm);
+    }
+    .nav-links{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--space-xs);
+        list-style: none;
+        padding: 0;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+        padding: var(--space-sm);
+        max-width: 1200px;
+        margin-inline: auto;
+
+    }
+
+/* ── TABLET: >= 768px ─────────────────────────────── */
+@media(min-width: 768px){
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: var(--space-sm) var(--space-lg);
+    }
+    main+section{
+        /* Layout com sidebar: sidebar 240px + conteúdo principal */
+        grid-template-columns: 240px 1fr;
+        grid-template-areas: 
+            "sidebar main"
+            "sidebar main";
+        padding: var(--space-sm) var(--space-lg);
+    }
+
+    .sidebar { grid-area: sidebar;}
+    .content { grid-area: main;}
+}
+
+/* ── DESKTOP: >= 1024px ─────────────────────────────── */
+@media(min-width: 1024px){
+    main+section{
+        display: flex;
+    }
+    .aside{ grid-area: aside;}
+}
