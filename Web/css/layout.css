@@ -1,9 +1,8 @@
 /* LAYOUT BASE — Mobile (<480px): coluna única */
 
-    .menu-bar {
-        display: flex;
+    .header {
+        display: column;
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
         gap: var(--space-sm);
         padding: var(--space-sm);
@@ -23,7 +22,12 @@
         padding: var(--space-sm);
         max-width: 1200px;
         margin-inline: auto;
+    }
 
+    .cards-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: var(--space-md);
     }
 
 /* ── TABLET: >= 768px ─────────────────────────────── */

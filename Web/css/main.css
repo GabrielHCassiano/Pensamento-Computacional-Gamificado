@@ -1,9 +1,9 @@
-
-:root{
-    /* Breakpoints */
+@import url(variables.css);
+/*:root{
+     Breakpoints */
     /* --bp-sm: 480px; --bp-md: 768px; --bp-lg: 1024px; --bp-xl: 1280px; */
 
-    /* Tokens de espaçamento */
+    /* Tokens de espaçamento 
 
     --space-xs: 0.5rem;
     --space-sm: 1rem;
@@ -11,15 +11,16 @@
     --space-lg: 2rem;
     --space-xl: 3rem;
 
-    /* Tipografia fluida */
+    Tipografia fluida 
     --fs-base: clamp(0.875rem, 2vm, 1rem);
     --fs-h1: clamp(1.75rem, 4vm, 2.5rem);
     --fs-h2: clamp(1.25rem, 3vm, 1.875rem);
     --fs-p: clamp(1.4rem, 3.5vm, 1.8rem);
     }
-
+    */
     body{
         font-size: var(--fs-base);
+        font-family: var(--font-body);
         line-height: 1.6;
     }
 

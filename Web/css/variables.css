@@ -1,0 +1,38 @@
+:root{
+    /* TIPOGRAFIA */
+    --font-heading: "Poppins", system-ui, sans-serif;
+    --font-body: "Inter", system-ui, sans-serif;
+    --font-xs: 0.640rem;
+    --font-sm: 0.800rem;
+    --font-base: 1.000rem;
+    --font-md: 1.250rem;
+
+
+    /* Tokens de espaçamento */
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+
+    /* Tipografia fluida */
+    --fs-base: clamp(0.875rem, 2vw, 1rem);
+    --fs-h1: clamp(1.75rem, 4vw, 2.5rem);
+    --fs-h2: clamp(1.25rem, 3vw, 1.875rem);
+    --fs-p: clamp(1.4rem, 3.5vw, 1.8rem);
+
+
+
+    /* CORES */
+    --color-text-primary: #F9FAFB;
+    --color-bg-primary: #4865e9;
+    --color-bg-secondary: #e2a50a;
+    --color-border: #E0E0E0;
+
+    --color-primary-100: #c4c8f7;
+
+    --color-primary-500: #0a47e2;
+
+    --color-primary-700: #0034cb;
+}
