@@ -1,4 +1,4 @@
-nav{
+/*nav{
     display: block;
 }
 nav > ul{
@@ -8,4 +8,77 @@ nav > ul{
 nav > ul > li > a{
     display: block;
     padding: 10px;
+}*/
+
+.header {
+    position: sticky; /* fica fixo no topo durante o scroll */
+    top: 0;
+    z-index: 100; /* acima de todos os outros elementos */
+    background-color: #969393;
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-inline: auto; /* centraliza o conteúdo */
+    padding: 0.75rem 1.5rem;
+}
+
+/* Mobile: menu oculto por padrão */
+.navbar__menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-bg-primary);
+    border-top: 1px solid var(--color-border);
+    list-style: none;
+    padding: 1rem 0;
+}
+
+/* Classe adicionada pelo JS ao clicar no hamburger */
+.navbar__menu--open { display: flex; }
+
+/* Desktop: menu horizontal */
+@media (min-width: 768px) {
+.navbar__menu {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    border: none;
+    padding: 0;
+    gap: 0.25rem;
+}
+
+.navbar__toggle { display: none; } /* esconde hamburger */
+}
+
+.navbar__link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-size: var(--font-sm);
+    font-weight: var(--weight-medium);
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.navbar__link:hover,
+.navbar__link:focus-visible {
+    background-color: var(--color-primary-100);
+    color: var(--color-primary-500);
+    outline: 2px solid var(--color-primary-500); /* foco acessível */
+}
+
+.navbar__link--active {
+    color: var(--color-primary-500);
+    font-weight: var(--weight-bold);
 }

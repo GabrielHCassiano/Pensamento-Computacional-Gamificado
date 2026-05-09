@@ -5,7 +5,7 @@
 <head>
 
     <meta charset="UTF-8">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Nome do Jogo - Home</title>
@@ -39,7 +39,33 @@
 
 <body>
 
-  <header>
+<header class="header">
+    <nav class="navbar" aria-label="Navegação principal">
+        <a href="/" class="navbar__brand" aria-label="Ir para pagina inicial">
+            <span class="navbar__logo-text">Pensamento Computacional Gamificado</span>
+        </a>
+
+        <!-- Botão hamburger (visível apenas em mobile) -->
+        <button class="navbar__toggle" aria-expanded="false" aria-controls="navbar-menu" aria-label="Abrir menu">
+            <span class="navbar__toggle-bar"></span>
+            <span class="navbar__toggle-bar"></span>
+            <span class="navbar__toggle-bar"></span>
+        </button>
+
+        <ul class="navbar__menu" id="navbar-menu" role="list">
+            <li class="navbar__item">
+                <a href="/" class="navbar__link navbar__link--active" aria-current="page">Inicio</a>
+            </li>
+            <li class="navbar__item">
+                <a href="/sobre" class="navbar__link">Contato</a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+<!--
+<header>
 
     <div class="menu-bar">
         <h1>Nome do Jogo</h1>
@@ -54,10 +80,50 @@
         </ul>
     </nav>
 
-  </header>
+</header>
+-->
 
-  <main>
+    <main>
 
+        <article class="card">
+            <figure class="card__figure">
+                <img src="thumb.jpg" alt="Descrição real da imagem" class="card__img" loading="lazy">
+            </figure>   
+            <div class="card__body">
+                <header class="card__header">
+                    <span class="badge badge--primary">Novo</span>
+                </header>
+                <h3 class="card__title">Nome do Jogo</h3>
+                <p class="card__description">
+                    Descrição concisa do conteúdo. Máximo de duas ou três linhas
+                    para manter a consistência visual na grade.
+                </p>
+                <form action="Game.html">
+                    <input type="submit" value="Jogar" />
+                </form>
+            </div>
+        </article>
+
+        <article class="card">
+            <figure class="card__figure">
+                <img src="thumb.jpg" alt="Descrição real da imagem" class="card__img" loading="lazy">
+            </figure>   
+            <div class="card__body">
+                <header class="card__header">
+                    <span class="badge badge--primary">Novo</span>
+                </header>
+                <h3 class="card__title">Área Professor</h3>
+                <p class="card__description">
+                    Descrição concisa do conteúdo. Máximo de duas ou três linhas
+                    para manter a consistência visual na grade.
+                </p>
+                <form action="areaprofessor.html">
+                    <input type="submit" value="Saiba mais" />
+                </form>
+            </div>
+        </article>
+
+        <!--
         <div>
             
         </div>
@@ -76,14 +142,49 @@
             </form>
 
         </section>
+        -->
     </main>
 </body>
 
-  <footer>
+  <!-- footer.html — Estrutura semântica -->
 
-        <p>&copy; 2026 - Matheus Maia, Gabriel Henriques</p>
-  </footer>
+<footer class="footer">
+    <div class="footer__container">
 
+        <!-- Zona 1: Colunas de links -->
+        <div class="footer__grid">
+            <div class="footer__brand">
+                <p class="footer__brand-name">Pensamento Computacional Gamificado</p>
+                <p class="footer__tagline">Plataforma Web Educacional que utiliza os pilares do pensamento computacional de forma gamificada, seções explicando os pilares do pensamento computacional e como esses pilares se relacionam a um jogo desenvolvido na unity que estará dentro da aplicação Web.</p>
+            </div>
 
+            <nav class="footer__nav" aria-label="Links de contatos">
+                <h4 class="footer__nav-title">Contatos</h4>
+                <ul class="footer__nav-list" role="list">
+                    <li><a href="mailto:gabriel.h.cassiano@gmail.com" class="footer__link">gabriel.h.cassiano@gmail.com</a></li>
+                </ul>
+            </nav>
+
+            <nav class="footer__nav" aria-label="Links de redes sociais">
+                <h4 class="footer__nav-title">Redes Sociais</h4>
+                <ul class="footer__nav-list" role="list">
+                    <li><a href="https://www.linkedin.com/in/gabriel-h-cassiano/" class="footer__link">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Zona 2: Copyright -->
+        <div class="footer__bottom">
+            <p class="footer__copyright"> &copy; <span id="footer-year"></span> Pensamento Computacional Gamificado. Todos os direitos reservados.</p>
+            <nav class="footer__legal" aria-label="Links legais">
+                <a href="/privacidade" class="footer__link">Privacidade</a>
+                    <a href="/termos" class="footer__link">Termos</a>
+            </nav>
+        </div>
+    </div>
+</footer>
+
+<!-- JS: Ano dinâmico no copyright -->
+<script> document.getElementById("footer-year").textContent = new Date().getFullYear();</script>
 
 </html>
