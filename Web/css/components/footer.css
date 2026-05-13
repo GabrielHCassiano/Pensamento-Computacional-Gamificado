@@ -1,3 +1,5 @@
+@import url(variables.css);
+
 .footer {
     background-color: #111827; /* fundo escuro */
     color: #E0E0E0;
@@ -22,7 +24,7 @@
 }
 
 .footer__brand-name {
-    font-size: var(--font-lg);
+    font-size: var(--fs-base);
     font-weight: var(--weight-bold);
     color: #FAFAFA;
     margin-bottom: 0.5rem;
