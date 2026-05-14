@@ -1,0 +1,23 @@
+:root{
+    /* CORES */
+    --_white : #ffffff;
+    --_yellow_600: #e2a50a;
+    /*--_gray_300: #E0E0E0*/
+    
+    --_blue-100: #c4c8f7;
+    --_blue-400 : #4865e9;
+    --_blue-500: #0a47e2;
+    --_blue-700: #0034cb;
+
+    --_gray-50: #F9FAFB;
+    --_gray-300: #D1D5DB;
+    --_gray-500: #6B7280;
+    --_gray-700: #374151;
+    --_gray-900: #111827;
+
+    /* Bordas */
+    --_radius-sm: 4px;
+    --_radius-md: 8px;
+    --_radius-lg: 12px;
+    --_radius-full: 9999px; /* pill / badge arredondado */
+}

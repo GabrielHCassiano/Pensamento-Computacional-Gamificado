@@ -1,4 +1,8 @@
-@import url(variables.css);
+@import url(tokens/primitives.css);
+@import url(tokens/semantic.css);
+@import url(tokens/spacing.css);
+@import url(tokens/typography.css);
+
 /*:root{
      Breakpoints */
     /* --bp-sm: 480px; --bp-md: 768px; --bp-lg: 1024px; --bp-xl: 1280px; */
@@ -18,6 +22,7 @@
     --fs-p: clamp(1.4rem, 3.5vm, 1.8rem);
     }
     */
+
     body{
         font-size: var(--fs-base);
         font-family: var(--font-body);
@@ -26,6 +31,5 @@
 
     h1{ font-size: var(--fs-h1);}
     h2{ font-size: var(--fs-h2);}
-    p{ font-size: var(--fs-p);}
-    
+    /*p{ font-size: var(--fs-p);}*/
 

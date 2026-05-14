@@ -1,0 +1,21 @@
+
+:root {
+    /* Aliases semânticos */
+    --color-text-primary: var(--_white);
+    --color-bg-primary: var(--_blue-400);
+    --color-bg-secondary: var(--_yellow-600);
+
+    --color-primary-100: var(--_blue-100);
+
+    --color-primary-500: var(--_blue-500);
+
+    --color-primary-700: var(--_blue-700);
+
+    --color-background: var(--_gray-900);
+
+    /* Aliases semânticos */
+    --color-text-secondary: var(--_gray-500);
+    /*--color-bg-primary: var(--_white);*/
+    --color-bg-secondary: var(--_gray-50);
+    --color-border: var(--_gray-300);
+}
