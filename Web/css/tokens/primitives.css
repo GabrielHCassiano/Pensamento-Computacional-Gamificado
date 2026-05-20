@@ -1,7 +1,8 @@
 :root{
     /* CORES */
     --_white : #ffffff;
-    --_yellow_600: #e2a50a;
+    --_yellow-600: #e2a50a;
+    --_black : #000000;
     /*--_gray_300: #E0E0E0*/
     
     --_blue-100: #c4c8f7;
@@ -16,8 +17,32 @@
     --_gray-900: #111827;
 
     /* Bordas */
-    --_radius-sm: 4px;
-    --_radius-md: 8px;
-    --_radius-lg: 12px;
+    --_radius-sm: 0.25rem;
+    --_radius-md: 0.50rem;
+    --_radius-lg: 0.75rem;
     --_radius-full: 9999px; /* pill / badge arredondado */
+
+    --_width-sm: 1px;
+    --_width-md: 2px;
+    --_width-lg: 4px;
+
+    /* Containers */
+    --_container-lg: 1200px;
+
+    /* Shadow */
+
+    --_shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.08);
+
+    /* Time */
+    --_fast: 0.2s;
+
+    /* Breakpoints */
+    --_bp-sm: 480px;
+    --_bp-md: 768px;
+    --_bp-lg: 1024px;
+    --_bp-xl: 1280px;
+
+
+
+
 }

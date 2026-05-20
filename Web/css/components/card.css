@@ -1,7 +1,4 @@
-@import url(tokens/primitives.css);
-@import url(tokens/semantic.css);
-@import url(tokens/spacing.css);
-@import url(tokens/typography.css);
+
 
 .card {
     --card-radius: 12px;
@@ -54,15 +51,15 @@
 
 .card__footer {
     margin-top: auto;
-    padding-top: 0.75rem;
-    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-3);
+    border-top: var(--border-width-sm) solid var(--color-border);
 }
 
 /* === Modificadores BEM === */
 
 /* Card em destaque (cor primária na borda superior) */
 .card--featured {
-    border-top: 4px solid var(--color-primary-500);
+    border-top: var(--border-width-lg) solid var(--color-primary-500);
 }
 
 /* Card desabilitado */

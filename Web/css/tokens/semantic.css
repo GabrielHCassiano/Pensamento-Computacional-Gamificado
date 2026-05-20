@@ -1,21 +1,41 @@
-
+@import url(primitives.css);
 :root {
     /* Aliases semânticos */
     --color-text-primary: var(--_white);
+    --color-text-secondary: var(--_black);
+
     --color-bg-primary: var(--_blue-400);
     --color-bg-secondary: var(--_yellow-600);
-
     --color-primary-100: var(--_blue-100);
-
     --color-primary-500: var(--_blue-500);
-
     --color-primary-700: var(--_blue-700);
-
     --color-background: var(--_gray-900);
 
-    /* Aliases semânticos */
-    --color-text-secondary: var(--_gray-500);
+
     /*--color-bg-primary: var(--_white);*/
-    --color-bg-secondary: var(--_gray-50);
     --color-border: var(--_gray-300);
-}
+
+    /**/
+    /* Bordas*/
+    --border-width-sm: var(--_width-sm);
+    --border-width-md: var(--_width-md);
+    --border-width-lg: var(--_width-lg);
+
+    --border-radius-sm: var(--_radius-sm);
+    --border-radius-md: var(--_radius-md);
+
+    --border-shadow-sm: var(--_shadow-sm);
+
+    /* Containers*/
+
+    --container-width-lg: var(--_container-lg);
+
+    /* Transition*/
+    --transition-fast: var(--_fast);
+    
+    /* Breakpoints */
+    --mobile-sm: var(--_bp-sm);
+    --mobile-lg: var(--_bp-md);
+    --desktop-md: var(--_bp-lg);
+    --desktop-lg: var(--_bp-xl);
+} 
