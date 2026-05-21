@@ -1,4 +1,7 @@
-
+.card-wrapper{
+    container-type: inline-size;
+    container-name: card-wrapper;
+}
 
 .card {
     --card-radius: 12px;
@@ -14,6 +17,16 @@
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
+@container card-wrapper(min-width: 480px){
+    .card{
+        flex-direction: row;
+    }
+    .card_image{
+        width: 200px;
+        aspect-ratio: 1;
+    }
+}
+
 .card:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
@@ -25,6 +38,7 @@
     width: 100%;
     height: 200px;
     object-fit: cover; /* recorta sem distorcer a imagem */
+    aspect-ratio: 16 / 9;
 }
 
 .card__body {
@@ -43,7 +57,7 @@
 }
 
 .card__description {
-    font-size: var(--font-sm);
+    font-size: var(--fs-base);
     color: var(--color-text-secondary);
     line-height: var(--leading-normal);
     flex: 1; /* empurra o footer do card para o fundo */
@@ -54,6 +68,8 @@
     padding-top: var(--space-3);
     border-top: var(--border-width-sm) solid var(--color-border);
 }
+
+
 
 /* === Modificadores BEM === */
 

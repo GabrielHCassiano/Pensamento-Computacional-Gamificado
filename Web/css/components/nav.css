@@ -36,7 +36,7 @@
 .navbar__menu--open { display: flex; }
 
 /* Desktop: menu horizontal */
-@media (min-width: var(--mobile-lg)) {
+@media (min-width: 768px) {
 .navbar__menu {
     display: flex;
     flex-direction: row;
