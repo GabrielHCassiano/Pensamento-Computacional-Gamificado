@@ -1,4 +1,3 @@
-@import url(primitives.css);
 :root {
     /* Aliases semânticos */
     --color-text-primary: var(--_white);
@@ -14,8 +13,19 @@
 
     /*--color-bg-primary: var(--_white);*/
     --color-border: var(--_gray-300);
+    --color-border-button: var(--_gray-500);
+    --color-button: var(--_gray-300);
+    --color-button-hover: var(--_white);
 
-    /**/
+    /* Images */
+    --image-width-sm: var(--_image-wd-sm);
+
+    --image-height-sm: var(--_image-ht-sm);
+    --image-height-md: var(--_image-ht-md);
+
+    /* Button */
+    --button-width-sm: var(--_button-wd-sm);
+
     /* Bordas*/
     --border-width-sm: var(--_width-sm);
     --border-width-md: var(--_width-md);
@@ -23,8 +33,11 @@
 
     --border-radius-sm: var(--_radius-sm);
     --border-radius-md: var(--_radius-md);
+    --border-radius-lg: var(--_radius-lg);
 
     --border-shadow-sm: var(--_shadow-sm);
+    --border-shadow-md: var(--_shadow-md);
+    --border-shadow-xl: var(--_shadow-xl);
 
     /* Containers*/
 

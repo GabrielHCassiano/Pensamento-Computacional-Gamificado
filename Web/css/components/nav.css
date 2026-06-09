@@ -5,8 +5,8 @@
     top: 0;
     z-index: 100; /* acima de todos os outros elementos */
     background-color: var(--color-bg-secondary);
-    border-bottom: var(--border-width-sm) solid var(--color-border);
     box-shadow: var(--border-shadow-sm);
+    margin: 0;
 }
 
 .navbar {
@@ -27,13 +27,29 @@
     left: 0;
     width: 100%;
     background-color: var(--color-bg-primary);
-    border-top: var(--border-width-sm) solid var(--color-border);
     list-style: none;
     padding: var(--space-4) 0;
+
 }
 
+.navbar__toggle{
+    display: flex;
+    margin-left: var(--space-2);
+    background-color: var(--color-bg-secondary);
+    border-style: solid;
+    border-radius: var(--border-radius-sm);
+    border-width: var(--border-width-md)
+}
+
+
 /* Classe adicionada pelo JS ao clicar no hamburger */
-.navbar__menu--open { display: flex; }
+.navbar__menu--open{ 
+    display: flex;
+    .navbar__toggle{
+        background-color: var(--color-primary-100);
+        outline: var(--border-width-md) solid var(--color-primary-500);
+    }
+}
 
 /* Desktop: menu horizontal */
 @media (min-width: 768px) {
@@ -47,7 +63,19 @@
     gap: var(--space-1);
 }
 
-.navbar__toggle { display: none; } /* esconde hamburger */
+.navbar__toggle {
+    display: none;
+    } /* esconde hamburger */
+}
+
+.material-symbols-outlined { /* icon hamburger */
+  background-color: var(--color-bg-secondary);
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+
 }
 
 .navbar__link {
