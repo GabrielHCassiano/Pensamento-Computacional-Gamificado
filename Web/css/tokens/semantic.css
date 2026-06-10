@@ -3,17 +3,20 @@
     --color-text-primary: var(--_white);
     --color-text-secondary: var(--_black);
 
-    --color-bg-primary: var(--_blue-400);
+    --color-bg-primary: var(--_gray-700);
     --color-bg-secondary: var(--_yellow-600);
-    --color-primary-100: var(--_blue-100);
-    --color-primary-500: var(--_blue-500);
-    --color-primary-700: var(--_blue-700);
-    --color-background: var(--_gray-900);
+    --color-primary-100: var(--_gray-100);
+    --color-primary-500: var(--_gray-500);
+    --color-primary-700: var(--_gray-700);
+    --color-background: var(--_green);
+
+    --color-link-highlight: var(--_yellow-600);
 
 
     /*--color-bg-primary: var(--_white);*/
     --color-border: var(--_gray-300);
     --color-border-button: var(--_gray-500);
+    --color-border-black: var(--_black);
     --color-button: var(--_gray-300);
     --color-button-hover: var(--_white);
 
@@ -42,6 +45,7 @@
     /* Containers*/
 
     --container-width-lg: var(--_container-lg);
+    --container-width-xl: var(--_container-xl);
 
     /* Transition*/
     --transition-fast: var(--_fast);

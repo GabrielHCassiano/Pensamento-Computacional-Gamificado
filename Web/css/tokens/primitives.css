@@ -10,13 +10,16 @@
     --_blue-500: #0a47e2;
     --_blue-700: #0034cb;
 
-    --_gray-50: #F9FAFB;
-    --_gray-300: #D1D5DB;
-    --_gray-500: #6B7280;
-    --_gray-700: #374151;
-    --_gray-900: #111827;
 
-    --_green: #15ff00;
+    --_gray-50: #ebfeef;
+    --_gray-100: #e4f7e9;
+    --_gray-300: #ccded0;
+    --_gray-400: #a8baad;
+    --_gray-500: #899a8d;
+    --_gray-700: #4e5e52;
+    --_gray-900: #101e14;
+
+    --_green: #1e3623;
 
     /* Bordas */
     --_radius-sm: 0.25rem;
@@ -36,6 +39,7 @@
 
     /* Containers */
     --_container-lg: 1200px;
+    --_container-xl: 1400px
 
     /* Time */
     --_fast: 0.2s;
