@@ -1,0 +1,67 @@
+
+/*
+/* LAYOUT BASE — Mobile (<480px): coluna única */
+    .header {
+        display: column;
+        flex-direction: row;
+        align-items: center;
+        gap: var(--space-4);
+        padding: var(--space-4);
+    }
+    .nav-links{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--space-2);
+        list-style: none;
+        padding: 0;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+        padding: var(--space-4);
+        max-width: var(--container-width-lg);
+        margin-inline: auto;
+    }
+
+    .cards-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: var(--space-6);
+    }
+
+/* ── TABLET: >= 768px ─────────────────────────────── */
+@media(min-width: 768px){
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: var(--space-4) var(--space-8);
+    }
+    main+section{
+        /* Layout com sidebar: sidebar 240px + conteúdo principal */
+        grid-template-columns: 240px 1fr;
+        grid-template-areas: 
+            "sidebar main"
+            "sidebar main";
+        padding: var(--space-4) var(--space-8);
+    }
+
+    .sidebar { grid-area: sidebar;}
+    .content { grid-area: main;}
+}
+
+/* ── DESKTOP: >= 1024px ─────────────────────────────── */
+@media(min-width: 1024px){
+    main+section{
+        display: flex;
+    }
+    .aside{ grid-area: aside;}
+
+}
+
+@media(min-width: 1600px) {
+    :root{
+        font-size: clamp(16px , 1.1vw, 20px);
+    }
+}

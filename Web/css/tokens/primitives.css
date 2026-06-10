@@ -1,0 +1,66 @@
+:root{
+    /* CORES */
+    --_white : #ffffff;
+    --_yellow-600: #e2a50a;
+    --_black : #000000;
+    /*--_gray_300: #E0E0E0*/
+    
+    --_blue-100: #c4c8f7;
+    --_blue-400 : #4865e9;
+    --_blue-500: #0a47e2;
+    --_blue-700: #0034cb;
+
+
+    --_gray-50: #ebfeef;
+    --_gray-100: #e4f7e9;
+    --_gray-300: #ccded0;
+    --_gray-400: #a8baad;
+    --_gray-500: #899a8d;
+    --_gray-700: #4e5e52;
+    --_gray-900: #101e14;
+
+    --_green: #1e3623;
+
+    /* Bordas */
+    --_radius-sm: 0.25rem;
+    --_radius-md: 0.50rem;
+    --_radius-lg: 0.75rem;
+    --_radius-full: 9999px; /* pill / badge arredondado */
+
+    --_width-sm: 1px;
+    --_width-md: 2px;
+    --_width-lg: 4px;
+
+    /* Shadow */
+
+    --_shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.08);
+    --_shadow-md: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --_shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+    /* Containers */
+    --_container-lg: 1200px;
+    --_container-xl: 1400px
+
+    /* Time */
+    --_fast: 0.2s;
+
+    /* Breakpoints */
+    --_bp-sm: 480px;
+    --_bp-md: 768px;
+    --_bp-lg: 1024px;
+    --_bp-xl: 1280px;
+
+    /* Image*/
+    --_image-ht-sm: 200px;
+    --_image-ht-md: 400px;
+
+    --_image-wd-sm: 180px;
+
+    /* Button */
+    --_button-wd-sm: 200px;
+
+
+
+
+
+}

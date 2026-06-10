@@ -1,0 +1,106 @@
+
+
+.header {
+    position: sticky; /* fica fixo no topo durante o scroll */
+    top: 0;
+    z-index: 100; /* acima de todos os outros elementos */
+    background-color: var(--color-bg-secondary);
+    box-shadow: var(--border-shadow-sm);
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--container-width-xl);
+    margin-inline: auto; /* centraliza o conteúdo */
+    padding: var(--space-3) var(--space-6);
+}
+
+/* Mobile: menu oculto por padrão */
+.navbar__menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    background-color: var(--color-bg-primary);
+
+}
+
+.navbar__toggle{
+    display: flex;
+    margin-left: var(--space-2);
+    background-color: var(--color-bg-secondary);
+    border-style: solid;
+    border-radius: var(--border-radius-sm);
+    border-width: var(--border-width-md)
+}
+
+
+/* Classe adicionada pelo JS ao clicar no hamburger */
+.navbar__menu--open{ 
+    display: flex;
+    .navbar__toggle{
+        background-color: var(--color-primary-100);
+        outline: var(--border-width-md) solid var(--color-primary-500);
+    }
+}
+
+/* Desktop: menu horizontal */
+@media (min-width: 768px) {
+.navbar__menu {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    border: none;
+    padding: 0;
+    gap: var(--space-1);
+    background: none;
+}
+
+.navbar__toggle {
+    display: none;
+    } /* esconde hamburger */
+}
+
+.material-symbols-outlined { /* icon hamburger */
+  background-color: var(--color-bg-secondary);
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+
+}
+
+.navbar__link {
+    display: block;
+    padding: var(--space-2) var(--space-4);
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-size: var(--font-sm);
+    font-weight: var(--weight-medium);
+    font-family: var(--font-body);
+    border-radius: var(--border-radius-sm);
+    border: var(--border-width-md) solid var(--color-border-black);
+    background-color: var(--color-bg-primary);
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.navbar__link:hover,
+.navbar__link:focus-visible {
+    background-color: var(--color-primary-100);
+    color: var(--color-primary-700);
+    outline: var(--border-width-md) solid var(--color-primary-500); /* foco acessível */
+}
+
+.navbar__link--active {
+    color: var(--color-link-highlight);
+    font-weight: var(--weight-bold);
+}
