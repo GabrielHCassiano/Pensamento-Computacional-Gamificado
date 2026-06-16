@@ -38,12 +38,14 @@ public class GrabObject : MonoBehaviour
             if (Keyboard.current.eKey.wasPressedThisFrame && grabbedObject == null)
             {
                 grabbedObject = hitInfo.collider.gameObject;
+                grabbedObject.GetComponent<BoxCollider2D>().isTrigger = true;
                 grabbedObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
                 grabbedObject.transform.position = grabPoint.position;
                 grabbedObject.transform.SetParent(transform);
             }
             else if(Keyboard.current.eKey.wasPressedThisFrame)
             {
+                grabbedObject.GetComponent<BoxCollider2D>().isTrigger = false;
                 grabbedObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
                 grabbedObject.transform.SetParent(null);
                 grabbedObject = null;
